@@ -1,0 +1,26 @@
+{
+  "name": "GetUnStuck",
+  "version": "1.0.0",
+  "description": "Users can post questions so other users can answer them.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisrw/GetUnStuck.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisrw/GetUnStuck/issues"
+  },
+  "homepage": "https://github.com/chrisrw/GetUnStuck#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.0",
+    "mongoose": "^5.8.11",
+    "nodemon": "^2.0.2"
+  }
+}
