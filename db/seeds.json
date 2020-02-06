@@ -1,11 +1,20 @@
 [
   {
-    "title": "How do I use a for loop?"
+    "title": "Post One",
+    "author": "notChrisWargo",
+    "date": "08-14-2019",
+    "post": "How do I do a for loop?"
   },
   {
-    "title": "How do I do this?"
+    "title": "Post Two",
+    "author": "notAlexJohnson",
+    "date": "01-09-2020",
+    "post": "How do I turn on my computer?"
   },
   {
-    "title": "How do I do that"
+    "title": "Post Three",
+    "author": "notRixioBarrios",
+    "date": "02-06-2020",
+    "post": "How do I turn on my computer?"
   }
 ]

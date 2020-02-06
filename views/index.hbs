@@ -1,1 +1,12 @@
 <h1>Hello</h1>
+
+<ul>
+    {{#each posts}}
+    <li>
+        <a href='post/{{this._id}}'>{{this.title}}</a>
+        <a href='post/{{this._id}}/edit'>Edit</a>
+    </li>
+    {{/each}}
+</ul>
+
+<a href="post/new">New</a>
