@@ -55,4 +55,6 @@ router.post("/", (req, res) => {
     })
     .catch(console.error);
 });
+//posts to the index.hbs page, try and get to add to show
+
 module.exports = router;
