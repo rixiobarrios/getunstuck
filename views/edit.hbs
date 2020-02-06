@@ -1,8 +1,14 @@
 <h2>Edit Query:</h2>
-<form action="/post/{{_id}}?_method=put" method="POST">
+<label action="/post/{{_id}}?_method=put" method="POST">
     <p>
         <label>Title:</label>
         <input type="text" value="{{title}}" name="title" />
+        <label>Body</label>
+        <input type="text" value="{{post}}" name="post" />
+        <input type="submit" value="Update" />
     </p>
-    <input type="submit" value="Update" />
+</label>
+<form action="/post/{{_id}}?_method=delete" method="post">
+    
+    <input type="submit" value="Remove" />
 </form>
