@@ -3,8 +3,9 @@
 <ul>
     {{#each posts}}
     <li>
-        <a href='post/{{this._id}}'>{{this.title}}</a>
+        <h2>{{this.title}}</h2>
         <p>{{post}}</p>
+        <a href='post/{{this._id}}'>View</a>
         <a href='post/{{this._id}}/edit'>Edit</a>
     </li>
     {{/each}}

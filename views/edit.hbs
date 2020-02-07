@@ -5,10 +5,16 @@
         <input type="text" value="{{title}}" name="title" />
         <label>Body</label>
         <input type="text" value="{{post}}" name="post" />
+        <label>Solved:</label>
+        {{#if solved}}
+        <input type="checkbox" name="solved" checked />
+        {{else}}
+        <input type="checkbox" name="solved" />
+        {{/if}}
         <input type="submit" value="Update" />
     </p>
 </form>
 <form action="/post/{{_id}}?_method=delete" method="post">
-    
+
     <input type="submit" value="Remove" />
 </form>

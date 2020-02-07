@@ -1,6 +1,16 @@
 <h1>{{title}}</h1>
 <h3>{{post}}</h3>
+{{#if solved}}
+<p>Solved</p>
+{{else}}
+<p>Pending Resolution</p>
+{{/if}}
 <form action="/post/{{_id}}?_method=delete" method="post">
     <input type="submit" value="Remove" />
-</form>
+    <form action='/post/{{_id}}' method='post' accept-charset="utf-8">
+        <label for='body'>Reply</label>
+        <input type='text' id='/:id' name='post'>
+        <input type='submit' value='Reply'>
+    </form>
 
+    <a href="post/new">New</a>
