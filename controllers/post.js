@@ -1,5 +1,5 @@
 const express = require('express');
-const Post = require('../db/schema');
+const Post = require('../models/Post');
 
 const router = express.Router();
 
@@ -58,5 +58,21 @@ router.post('/', (req, res) => {
         .catch(console.error);
 });
 //posts to the index.hbs page, try and get to add to show
+// router.post("/:id", (req, res) => {
+//   Post.create({
+//     reply: req.body.reply
+//   })
+//     .catch(console.error);
+// });
+router.post("/:id", (req, res) => {
+  Post.findOneAndUpdate(
+    {
+      _id: req.params.id
+    },
+    { $push: { reply: req.body.reply } }
+  ).then(reply => {
+    res.redirect(`/post/${req.params.id}`);
+  });
+});
 
 module.exports = router;

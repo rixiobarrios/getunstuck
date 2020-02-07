@@ -7,10 +7,15 @@
 {{/if}}
 <form action="/post/{{_id}}?_method=delete" method="post">
     <input type="submit" value="Remove" />
+</form>
     <form action='/post/{{_id}}' method='post' accept-charset="utf-8">
-        <label for='body'>Reply</label>
-        <input type='text' id='/:id' name='post'>
+        <label for='reply'>Reply</label>
+        <input type='text' id='reply' name='reply'>
         <input type='submit' value='Reply'>
-    </form>
+        <ul>
+        {{#each this.reply}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
 
-    <a href="post/new">New</a>
+    </form>
