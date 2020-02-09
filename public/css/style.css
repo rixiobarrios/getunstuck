@@ -1,0 +1,26 @@
+body {
+    background: #eff7cf;
+    font-family: 'Russo One', sans-serif;
+    color: #bad9b5;
+}
+
+h1,
+h3 {
+    color: #732c2c;
+}
+
+a {
+    text-decoration: none;
+    color: #aba361;
+}
+
+.home {
+    margin: 0 auto;
+    width: 60%;
+}
+
+input {
+    border: 1px solid #732c2c;
+    font-family: 'Russo One', sans-serif;
+    color: #aba361;
+}

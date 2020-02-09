@@ -1,15 +1,18 @@
-<h1>GetUnStuck</h1>
+<div>
+    <h1>GetUnStuck</h1>
+    <p>Post your coding quiestions and get an answer from the community.</p>
 
-<ul>
-    {{#each posts}}
-    <li>
-        <h2>{{this.title}}</h2>
-        <p>{{post}}</p>
-        <a href='post/{{this._id}}'>View</a>
-        <a href='post/{{this._id}}/edit'>Edit</a>
-    </li>
-    {{/each}}
-</ul>
+    <ul>
+        {{#each posts}}
+        <li>
+            <h2>{{this.title}}</h2>
+            <p>{{post}}</p>
+            <a href='post/{{this._id}}'>View</a>
+            <a href='post/{{this._id}}/edit'>Edit</a>
+        </li>
+        {{/each}}
+    </ul>
 
 
-<a href="post/new">New</a>
+    <a href="post/new">New</a>
+</div>

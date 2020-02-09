@@ -8,14 +8,14 @@
 <form action="/post/{{_id}}?_method=delete" method="post">
     <input type="submit" value="Remove" />
 </form>
-    <form action='/post/{{_id}}' method='post' accept-charset="utf-8">
-        <label for='reply'>Reply</label>
-        <input type='text' id='reply' name='reply'>
-        <input type='submit' value='Reply'>
-        <ul>
+<form action='/post/{{_id}}' method='post' accept-charset="utf-8">
+    <label for='reply'>Reply</label>
+    <input type='text' id='reply' name='reply'>
+    <input type='submit' value='Reply'>
+    <ul>
         {{#each this.reply}}
         <li>{{this}}</li>
         {{/each}}
     </ul>
 
-    </form>
+</form>
